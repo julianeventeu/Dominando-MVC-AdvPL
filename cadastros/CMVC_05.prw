@@ -60,10 +60,10 @@ Static Function ViewDef()
 Local oModel := ModelDef()
 Local oView
 Local oStrZB5:= FWFormStruct(2, 'ZB5')	 
-Local oStrZB6:= FWFormStruct(2, 'ZB6')  
+Local oStrZB6:= FWFormStruct(2, 'ZB6', {|cField| AllTrim(Upper(cField)) $ "ZB6_RA" })  
 Local oStr2:= FWCalcStruct( oModel:GetModel('CALC_ALUNO') ) 
 Local oStr4:= FWCalcStruct( oModel:GetModel('CALC_NOTA') ) 
-Local oStruZB7:= FWFormStruct(2, 'ZB7')
+Local oStruZB7:= FWFormStruct(2, 'ZB7', {|cField| AllTrim(Upper(cField)) $ "ZB7_RA|ZB7_CODTUR" })  
 	
 	oStruZB7:AddField( 'LEGENDA','01','Legenda','Legenda',, 'Get' ,'@BMP',,,.F.,,,,,,.T.,, )
 	
