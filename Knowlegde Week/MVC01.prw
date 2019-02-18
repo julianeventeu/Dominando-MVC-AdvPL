@@ -3,7 +3,7 @@
 
 //-------------------------------------------------------------------
 /*/{Protheus.doc} MVC01
-Exemplo de um modelo e view baseado em uma unica tabela.
+Exemplo de modelo e view baseado em uma unica tabela.
 
 @since 01/06/2018
 /*/
